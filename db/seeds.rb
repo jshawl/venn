@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+
+@e = Velement.create name: "my cool element"
+@s = Vset.create name: "my awesome set"
+
+@e.vsets << @s
+@s.velements << @e
